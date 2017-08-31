@@ -1,0 +1,14 @@
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width:60%;
+    position:relative;
+}
+th, td {
+    padding: 5px;
+    text-align: center;
+}
+caption {
+    border: 1px solid black;
+
+}
