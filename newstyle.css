@@ -1,0 +1,52 @@
+table, tr, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width:100%;
+    font-size:16px;
+    table-layout:fixed;
+    text-align:center;
+
+}
+th, td {
+    padding: 5px;
+}
+.league {
+    border: 1px solid black;
+    background-color:#333;
+    font-size:16px;
+    color:white;
+    margin:0 auto;
+
+
+}
+
+.firstrow {
+    background-color:#e6e6e6;
+
+}
+.secondrow {
+    background-color:#f3f3f3;
+}
+
+.position {
+    width:2%;
+    
+}
+
+.matches {
+    width:2%;
+}
+
+.team {
+    width:12%;
+}
+
+.points {
+        width:2%;
+    }
+
+.right-section{
+    width:25%;
+    float:left;
+    display:inline-block;
+}

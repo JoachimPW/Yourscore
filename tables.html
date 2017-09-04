@@ -3,7 +3,12 @@
 <head>
 <link type="text/css" rel="stylesheet" href="css/style.css" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/interact.js/1.2.8/interact.min.js"></script>
+<script src="//cdn.jsdelivr.net/interact.js/1.2.8/interact.min.js"></script>
 <!--<script type="text/js" rel="javascript" href="js/animate.js"/> -->
+<script src="http://code.interactjs.io/v1.2.9/interact.min.js"></script>
+<script src="js/script.js"></script>
+
 <meta charset="utf-8">
 <title>test</title>
 </head>
@@ -29,9 +34,9 @@
   <caption class="mygames">My games</caption>
   
   <tr class="firstrow">
-    <td class="team"> PFC Ludogorets</td>
-    <td class="vs"> vs. </td>
-    <td class="team"> AC Hoffenhaim</td>
+      <td class="team"><a href="stats.html"> Chelsea FC </a></td>
+      <td class="vs"><a href="stats.html"> vs. </a></td>
+      <td class="team"><a href="stats.html"> Leicester City </a></td>
   </tr>
   
 
@@ -61,16 +66,16 @@
   <div class="dato">
     <table>
       <td> <a href="#"> Aug 29 </td>
-      <td> Aug 30 </td>
-      <td> Aug 31 </td>
-      <td> Today </td>
-      <td> Sep 2 </td>
-      <td> Sep 3 </td>
-      <td> Sep 4 </td>
+      <td> <a href="#"> Aug 30 </td>
+      <td> <a href="#"> Aug 31 </td>
+      <td> <a href="tables.html"> Today </td>
+      <td> <a href="#"> Sep 2 </td>
+      <td> <a href="#"> Sep 3 </td>
+      <td> <a href="#"> Sep 4 </td>
     </table>
-  </div>
+    </div>
   <table>
-    <caption class="liga">Alka Superliga</caption>
+    <h2 class="liga">Denmark - Alka Superliga</h2>
   
     <tr class="firstrow">
       <td class="time"> 18:00 </td>
@@ -101,7 +106,7 @@
       <td> Hobro </td>
     </tr>
 
-    <tr class="secondrow">
+    <tr class="firstrow">
       <td> 20:00 </td>
       <td> Silkeborg IF</td>
       <td> vs.</td>
@@ -116,14 +121,12 @@
       <td> vs.</td>
       <td> Hobro </td>
     </tr>
-
     <tr class="secondrow">
       <td> 20:00 </td>
       <td> Silkeborg IF</td>
       <td> vs.</td>
       <td> Hobro </td>
     </tr>
-
     <tr class="secondrow">
       <td> 20:00 </td>
       <td> Silkeborg IF</td>
@@ -132,38 +135,55 @@
     </tr>
   
   </table>
+
+
+  <h2 class="liga">England - Premiere League</h2>
+  <table>
+<tr class="firstrow">
+      <td class="time"> 18:00 </td>
+      <td class="team"> FC København</td>
+      <td class="vs"> vs. </td>
+      <td class="team"> FC Midtjylland</td>
+    </tr>
+  
+
+    <tr class="secondrow">
+      <td> 18:00 </td>
+      <td> FC Helsingør</td>
+      <td> vs.</td>
+      <td> Randers FC </td>
+   </tr>
+
+    <tr class="firstrow">
+      <td> 19:30 </td>
+      <td> Brøndby IF</td>
+      <td> vs.</td>
+      <td> AC Horsens</td>
+    </tr>
+
+  </table>
+
   </div>
 
 <div class="right-section">
- <table>
-  <caption class="mygames">My games</caption>
-  
-  <tr class="firstrow">
-    <td class="team"> PFC Ludogorets</td>
-    <td class="vs"> vs. </td>
-    <td class="team"> AC Hoffenhaim</td>
-  </tr>
-  
 
-  <tr class="secondrow">
-    <td> Silkeborg IF</td>
-    <td> vs.</td>
-    <td> Tottenham Hotspur </td>
-  </tr>
+ </div>
 
-  <tr class="firstrow">
-    <td> FC Dinamo Bucuresti</td>
-    <td> vs.</td>
-    <td> FC Chelsea</td>
-  </tr>
+<div class="holder">
 
-   <tr class="secondrow">
-    <td> AC Milan</td>
-    <td> vs.</td>
-    <td> Fiorentina </td>
-  </tr>
+<div id="box-one" class="draggable">  
+  <p> I am the first Box </p>
+</div>  
+<div id="box-two" class="draggable">  
+    <p> I am the second Box </p>
+</div>  
+<br>
+<div id="dropzone" class="dropzone">You can drop the boxes here</div>  
 
-</table>
+</div>
+
+
+
 </div>
 </div>
 </body>
