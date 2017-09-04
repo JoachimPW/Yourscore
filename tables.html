@@ -3,7 +3,9 @@
 <head>
 <link type="text/css" rel="stylesheet" href="css/style.css" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/interact.js/1.2.8/interact.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/interact.js/1.2.8/interact.min.js"></script>
+
+<script src="js/script.js"> </script>
 
 <!--<script type="text/js" rel="javascript" href="js/animate.js"/> -->
 <meta charset="utf-8">
@@ -27,35 +29,14 @@
 
 <div class="wrapper">
   <div class="left-section">
- <table>
-  <caption class="mygames">My games</caption>
-  
-  <tr class="firstrow">
-    <td class="team"> PFC Ludogorets</td>
-    <td class="vs"> vs. </td>
-    <td class="team"> AC Hoffenhaim</td>
-  </tr>
-  
-
-  <tr class="secondrow">
-    <td> Silkeborg IF</td>
-    <td> vs.</td>
-    <td> Tottenham Hotspur </td>
-  </tr>
-
-  <tr class="firstrow">
-    <td> FC Dinamo Bucuresti</td>
-    <td> vs.</td>
-    <td> FC Chelsea</td>
-  </tr>
-
-   <tr class="secondrow">
-    <td> AC Milan</td>
-    <td> vs.</td>
-    <td> Fiorentina </td>
-  </tr>
-
-</table>
+    <div id="box-one" class="draggable">  
+  <p> I am the first Box </p>
+</div>  
+<div id="box-two" class="draggable">  
+    <p> I am the second Box </p>
+</div>  
+<br>
+<div id="dropzone" class="dropzone">You can drop the boxes here</div>  
   </div>
   
 
@@ -72,7 +53,7 @@
     </table>
   </div>
   <table>
-    <caption class="liga">Alka Superliga</caption>
+    <h2 class="liga">Denmark - Alka Superliga</h2>
   
     <tr class="firstrow">
       <td class="time"> 18:00 </td>
@@ -157,7 +138,7 @@
     </tr>
   
 
-    <tr class="draggable">
+    <tr class="secondrow draggable">
       <td> 18:00 </td>
       <td> FC Helsingør</td>
       <td> vs.</td>
@@ -173,47 +154,12 @@
 
   </table>
 
-<div id="box-one" class="draggable">  
-  <p> I am the first Box </p>
-</div>  
-<div id="box-two" class="draggable">  
-    <p> I am the second Box </p>
-</div>  
-<br>
-<div id="dropzone" class="dropzone">You can drop the boxes here</div>  
+
 
   </div>
 
 <div class="right-section">
- <table>
-  <caption class="mygames">My games</caption>
-  
-  <tr class="firstrow">
-    <td class="team"> PFC Ludogorets</td>
-    <td class="vs"> vs. </td>
-    <td class="team"> AC Hoffenhaim</td>
-  </tr>
-  
-
-  <tr class="secondrow">
-    <td> Silkeborg IF</td>
-    <td> vs.</td>
-    <td> Tottenham Hotspur </td>
-  </tr>
-
-  <tr class="firstrow">
-    <td> FC Dinamo Bucuresti</td>
-    <td> vs.</td>
-    <td> FC Chelsea</td>
-  </tr>
-
-   <tr class="secondrow">
-    <td> AC Milan</td>
-    <td> vs.</td>
-    <td> Fiorentina </td>
-  </tr>
-
-</table>
+ 
 </div>
 </div>
 </body>
