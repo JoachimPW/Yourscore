@@ -3,9 +3,12 @@
 <head>
 <link type="text/css" rel="stylesheet" href="css/style.css" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/interact.js/1.2.8/interact.min.js"></script>
+<script src="//cdn.jsdelivr.net/interact.js/1.2.8/interact.min.js"></script>
 <!--<script type="text/js" rel="javascript" href="js/animate.js"/> -->
 <script src="http://code.interactjs.io/v1.2.9/interact.min.js"></script>
-<script src="script.js"></script>
+<script src="js/script.js"></script>
+
 <meta charset="utf-8">
 <title>test</title>
 </head>
@@ -166,15 +169,18 @@
 
  </div>
 
-<!-- enable javascript to view a demo -->
-<div id="no-drop" class="draggable drag-drop"> #no-drop </div>
+<div class="holder">
 
-<div id="yes-drop" class="draggable drag-drop"> #yes-drop </div>
+<div id="box-one" class="draggable">  
+  <p> I am the first Box </p>
+</div>  
+<div id="box-two" class="draggable">  
+    <p> I am the second Box </p>
+</div>  
+<br>
+<div id="dropzone" class="dropzone">You can drop the boxes here</div>  
 
-<div id="outer-dropzone" class="dropzone">
-  #outer-dropzone
-  <div id="inner-dropzone" class="dropzone">#inner-dropzone</div>
- </div>
+</div>
 
 
 </div>
