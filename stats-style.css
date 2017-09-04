@@ -30,7 +30,7 @@ section.container-1{
     width: 100%;
     height: 300px;
     background-color: antiquewhite;
-    padding: 10px;
+    margin: 0;
 }
 table{
     width: 100%;
@@ -80,6 +80,7 @@ table.events{
     border-collapse: collapse;
     width: 100%;
     color: black;
+    table-layout:fixed; 
 }
 td.events, th.events{
   border: 1px solid #dddddd;
@@ -91,7 +92,7 @@ th.events{color:white;
   text-align: center;
 }
 td.events{
-  max-width: 34%;
+  table-layout: fixed;
 }
 #yellow-card{
   height: 25px;
