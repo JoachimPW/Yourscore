@@ -33,31 +33,51 @@ li a:hover:not(.active) {
 }
 
 .active {
-    background-color: #4CAF50;
+    background:grey;
 }
 
 .wrapper {
     background-color:white;
     width:100%;
-    height: 800px;
-    margin:0 auto;   
+    height: 800px;  
+    position:relative; 
+    
 }
 
 .mid-section{
     width:50%;
     height: 800px;
-    margin:0 auto;
     position:relative;
+    display:inline-block;
+    
+    border: solid 1px black;
+}
+
+.dato {
+background-color:#e6e6e6;
+
+}
+
+.dato a {
+    text-decoration: none;
+    color:black;
+}
+
+.dato td:hover:not(.active) {
+    background:grey;
 }
 
 .left-section{
-    width:25%;
-    position:absolute;
+    width:24.737%;
+    display:inline-block;
+    float:left;
+
 }
 
 .right-section{
     width:25%;
-    position:initial;
+    float:left;
+    display:inline-block;
 }
 
 
@@ -73,11 +93,13 @@ table, tr, td {
 th, td {
     padding: 5px;
 }
-caption {
+.liga {
     border: 1px solid black;
     background-color:#333;
-    font-size:20px;
+    font-size:16px;
     color:white;
+    margin:0 auto;
+
 
 }
 
@@ -101,4 +123,38 @@ caption {
     width:25%;
 
 }
+.holder {
+  width: 500px;
+  height: 500px;
+}
+.dropzone {
+  background-color: #ccc;
+  padding: 10px;
+  width: 500px;
+  height: 200px;
+   border: dashed 4px transparent;
+  float:left;
+}
+
+.draggable {
+  width: 100px;
+  height: 100px;
+  float:left;
+  background-color: #2196F3;
+  color: white;
+  padding:10px;
+  margin: 10px;
+}
+
+.drop-active {
+  border-color: #aaa;
+}
+
+.drop-target {
+  background-color: #000;
+  color: #FFF;
+  border-color: #fff;
+  border-style: solid;
+}
+
 
