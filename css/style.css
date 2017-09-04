@@ -38,11 +38,26 @@ li a:hover:not(.active) {
 
 .wrapper {
     background-color:white;
-    width:60%;
+    width:100%;
     height: 800px;
-    margin:0 auto;  
+    margin:0 auto;   
+}
 
-    
+.mid-section{
+    width:50%;
+    height: 800px;
+    margin:0 auto;
+    position:relative;
+}
+
+.left-section{
+    width:25%;
+    position:absolute;
+}
+
+.right-section{
+    width:25%;
+    position:initial;
 }
 
 
