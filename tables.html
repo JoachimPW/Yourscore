@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link type="text/css" rel="stylesheet" href="css/style.css" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
 <!--<script type="text/js" rel="javascript" href="js/animate.js"/> -->
-<script src="js/script.js"></script>
+
 
 <meta charset="utf-8">
 <title>test</title>
@@ -12,12 +14,22 @@
 
 <body>
 
+
 <header>
   <ul>
     <li><a class="active" href="#home">Home</a></li>
     <li><a href="#news">News</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li style="float:right"><a class="active" href="#about">Login</a></li>
+
+
+    <li style="float:right"><div class="dropdown">
+    <button class="dropbtn" onclick="myFunction()">Friends list</button>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="#"><div id="circle"></div>Friend 1</a>
+      <a href="#"><div id="circle"></div>Friend 2</a>
+      <a href="#">Friend 3</a>
+    </div>
+  </div></li>
   </ul>
 
 </header>
@@ -27,18 +39,18 @@
 
     <div class="yourgames">
       <table>
-        
+
       </table>
 
  <table>
   <caption class="mygames">My games</caption>
-  
+
   <tr class="firstrow">
       <td class="team"><a href="stats.html"> Chelsea FC </a></td>
       <td class="vs"><a href="stats.html"> vs. </a></td>
       <td class="team"><a href="stats.html"> Leicester City </a></td>
   </tr>
-  
+
 
   <tr class="secondrow">
     <td> Silkeborg IF</td>
@@ -61,12 +73,12 @@
 </table>
 
   </div>
- 
+
 
   </div>
 
-  
-  
+
+
 
 <div class="mid-section">
   <div class="dato">
@@ -80,8 +92,8 @@
       <td> <a href="#"> Sep 4 </td>
     </table>
     </div>
-    
-    
+
+
    <h2 class="liga">England - Premier League</h2>
   <table>
 <tr class="firstrow">
@@ -90,7 +102,7 @@
       <td class="vs"> vs. </td>
       <td class="team"> Leicester City</td>
     </tr>
-  
+
 
     <tr class="secondrow">
       <td> 18:00 </td>
@@ -112,25 +124,29 @@
       <td> vs.</td>
       <td> West Ham United </td>
    </tr>
-      
+
        <tr class="firstrow">
       <td> 19:30 </td>
       <td> Burnley </td>
       <td> vs.</td>
       <td> Arsenal </td>
     </tr>
-      
-  </table> 
-    
-    
+
+  </table>
+
+
   <table>
     <h2 class="liga">Denmark - Alka Superliga</h2>
-  
+
     <tr class="firstrow">
       <td class="time"> 18:00 </td>
       <td class="team"> FC København</td>
       <td class="vs"> vs. </td>
       <td class="team"> FC Midtjylland</td>
+      <td class="add"> <button type="button" class"btn btn-default">
+        <i class="glyphicon glyphicon-star-empty"> </i>
+      </button>
+      </td>
     </tr>
 
     <tr class="secondrow">
@@ -139,6 +155,10 @@
       <td> FC Helsingør</td>
       <td> vs.</td>
       <td> Randers FC </td>
+      <td class="add"> <button type="button" class"btn btn-default">
+        <i class="glyphicon glyphicon-star-empty"> </i>
+      </button>
+      </td>
    </tr>
 
     <tr class="firstrow">
@@ -146,6 +166,10 @@
       <td> Brøndby IF</td>
       <td> vs.</td>
       <td> AC Horsens</td>
+      <td class="add"> <button type="button" class"btn btn-default">
+        <i class="glyphicon glyphicon-star-empty"> </i>
+      </button>
+      </td>
     </tr>
 
     <tr class="secondrow">
@@ -182,7 +206,7 @@
       <td> vs.</td>
       <td> Hobro </td>
     </tr>
-  
+
   </table>
 
 <h2 class="liga">Bulgaria - Purva Liga</h2>
@@ -191,53 +215,101 @@
       <td class="time"> 18:00 </td>
       <td class="team"> CSKA Sofia</td>
       <td class="vs"> vs. </td>
-      <td class="team"> Levski Sofia</td>
+      <td class="team"> FC Midtjylland</td>
+      <td class="add"> <button type="button" class"btn btn-default">
+        <i class="glyphicon glyphicon-star-empty"> </i>
+      </button>
+      </td>
     </tr>
-  
+
 
     <tr class="secondrow">
       <td> 18:00 </td>
       <td> Ludogorets Razgrad</td>
       <td> vs.</td>
-      <td> Beroe Stara Zagora </td>
+      <td> Randers FC </td>
+      <td class="add"> <button type="button" class"btn btn-default">
+        <i class="glyphicon glyphicon-star-empty"> </i>
+      </button>
+      </td>
    </tr>
 
     <tr class="firstrow">
       <td> 19:30 </td>
       <td> Lokomotiv Plovdiv</td>
       <td> vs.</td>
-      <td> Etar Veliko Tarnovo</td>
+      <td> AC Horsens</td>
+      <td class="add"> <button type="button" class"btn btn-default">
+        <i class="glyphicon glyphicon-star-empty"> </i>
+      </button>
+      </td>
     </tr>
-    
+
     <tr class="secondrow">
       <td> 18:00 </td>
       <td> Vereya</td>
       <td> vs.</td>
       <td> Cherno more </td>
-   </tr>   
-         
-         
-         
-    </table>
-    
-  
-
-  <h2 class="liga">Romania - Liga I</h2>
-     <table>
-         <tr class="firstrow">
-      <td class="time"> 18:00 </td>
-      <td class="team"> Dinamo Bucuresti</td>
-      <td class="vs"> vs. </td>
-      <td class="team"> FSCB</td>
-    </tr>
-  
-
-    <tr class="secondrow">
-      <td> 18:00 </td>
-      <td> Astra Giurgiu</td>
-      <td> vs.</td>
-      <td> Gaz Metan Medias </td>
    </tr>
+
+
+
+    </table>
+
+
+
+  </table>
+
+   <table class="urgames">
+     <tr class="secondrow">
+      <td> TEST123 </td>
+     </tr>
+
+   </table>
+
+  </div> <!-- MID-SECTION close -->
+
+<div class="right-section">
+
+ <h1>
+                <a id="menu-toggle" href="#" class="btn btn-default"><i class="glyphicon glyphicon-arrow-right"></i></a>
+                </h1>
+
+
+<table>
+  <caption class="liga">My games</caption>
+
+  <tr class="firstrow">
+      <td class="team"><a href="stats.html"> Chelsea FC </a></td>
+      <td class="vs"><a href="stats.html"> vs. </a></td>
+      <td class="team"><a href="stats.html"> Leicester City </a></td>
+  </tr>
+
+
+  <tr class="secondrow">
+    <td> Silkeborg IF</td>
+    <td> vs.</td>
+    <td> Tottenham Hotspur </td>
+  </tr>
+
+  <tr class="firstrow">
+    <td> FC Dinamo Bucuresti</td>
+    <td> vs.</td>
+    <td> FC Chelsea</td>
+  </tr>
+
+   <tr class="secondrow">
+    <td> AC Milan</td>
+    <td> vs.</td>
+    <td> Fiorentina </td>
+  </tr>
+
+</table>
+
+
+ </div>
+
+</div> <!-- Wrapper close -->
 
     <tr class="firstrow">
       <td> 19:30 </td>
@@ -245,75 +317,75 @@
       <td> vs.</td>
       <td> Hermannstadt</td>
     </tr>
-    
+
     <tr class="secondrow">
       <td> 18:00 </td>
       <td> Botosani</td>
       <td> vs.</td>
       <td> ACS Poli Timisoara </td>
    </tr>
-         
-         
+
+
     </table>
-    
+
   </div>
 
   <div class="right-section">
   <table>
     <h2 class="league">England - Premier League </h2>
-  
-   
+
+
           <tr class="toplane">
       <td class="position"> P. </td>
       <td class="team"> Team</td>
       <td class="matches"> M. </td>
       <td class="points"> Pt. </td>
     </tr>
-    
-        
+
+
      <tr class="firstrow">
       <td style="background:#3333cc;"> 1. </td>
       <td>  Manchester United</td>
       <td> 1 </td>
       <td> 3 </td>
    </tr>
-      
+
        <tr class="secondrow">
        <td style="background:#3333cc;"> 2. </td>
       <td>  Liverpool</td>
       <td> 1</td>
       <td> 3 </td>
    </tr>
-  
-       
+
+
      <tr class="firstrow">
       <td style="background:#3333cc;"> 3. </td>
       <td>  Huddersfield Town</td>
       <td> 1</td>
       <td> 3 </td>
    </tr>
-      
+
       <tr class="secondrow">
        <td style="background:#3333cc;"> 4. </td>
       <td> Manchester City </td>
       <td> 1</td>
       <td> 3 </td>
    </tr>
-      
+
       <tr class="firstrow">
       <td style="background:#cca300;"> 5. </td>
       <td>  West Bromwich Albion</td>
       <td> 1</td>
       <td> 3 </td>
    </tr>
-      
+
        <tr class="secondrow">
       <td> 6. </td>
       <td> Chelsea </td>
       <td> 1</td>
       <td> 3 </td>
    </tr>
-      
+
       <tr class="firstrow">
        <td style="background:#800000;"> 7. </td>
       <td>  Watford</td>
@@ -322,19 +394,27 @@
    </tr>
       </table>
 </div> <!-- Wrapper close -->
+<div id="page-content-wrapper">
+    <div class='hidden-lg'>
+        <div class="content-header">
+             <h1>
+                <a id="menu-toggle" href="#" class="btn btn-default"><i class="glyphicon glyphicon-arrow-right"></i></a>
+                </h1>
+
+        </div>
+    </div>
 
     <!-- Footer -->
-  
+
 <!--Footer starts here-->
     <footer>
-        
+
         <h1>Design by some jokes</h1>
-        
+
 </footer>
-                
-    
+
+
     <!--- Footer closes here -->
-    
+
 </body>
 </html>
-
