@@ -1,5 +1,5 @@
 
-// Button - add to favorite //
+
 
 $('.add').click( function(){
     $(this).find('i').toggleClass('glyphicon-star-empty').toggleClass('glyphicon-arrow-left');
@@ -8,12 +8,6 @@ $('.add').click( function(){
 $('#menu-toggle').click( function(){
     $(this).find('i').toggleClass('glyphicon-arrow-right').toggleClass('glyphicon-arrow-left');
 });
-
-// The basic check
-if(document.readyState === 'complete') {
-    // good to go!
-}
-
 
 /*function copytable() {
   var source = document.getElementsByClassName('TableB');
@@ -36,6 +30,7 @@ function deleteTableB() {
   tableB.parentNode.removeChild(tableB);
 } */
 
+// Button - add to favorite //
 
 $(document).ready(function() {
   $(".favourite").click(function() {
@@ -59,3 +54,4 @@ window.onclick = function(e) {
       }
   }
 }
+
