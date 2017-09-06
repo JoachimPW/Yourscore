@@ -12,17 +12,30 @@
 </head>
 
 <body>
-  <script src="js/script.js"></script>
-  <script src="js/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 <header>
   <ul>
     <li><a class="active" href="#home">Home</a></li>
     <li><a href="#news">News</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li style="float:right"><a class="active" href="#about">Login</a></li>
+
+
+    <li style="float:right"><div class="dropdown">
+    <button class="dropbtn" onclick="myFunction()">Friends list</button>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="#"><div id="circle"></div>Friend 1</a>
+      <a href="#"><div id="circle"></div>Friend 2</a>
+      <a href="#">Friend 3</a>
+    </div>
+  </div></li>
   </ul>
 
 </header>
+
+<div class="banner">
+</div>
 
 <div class="wrapper">
   <div class="left-section">
@@ -90,7 +103,7 @@
       <td class="team"> FC København</td>
       <td class="vs"> vs. </td>
       <td class="team"> FC Midtjylland</td>
-      <td class="add"> <button type="button" class"btn btn-default">
+      <td class="add"> <button type="button" class="favourite">
         <i class="glyphicon glyphicon-star-empty"> </i> 
       </button> 
       </td>
@@ -106,7 +119,7 @@
       <td> FC Helsingør</td>
       <td> vs.</td>
       <td> Randers FC </td>
-      <td class="add"> <button type="button" class"btn btn-default">
+      <td class="add"> <button type="button" class="favourite">
         <i class="glyphicon glyphicon-star-empty"> </i> 
       </button> 
       </td>
@@ -117,7 +130,7 @@
       <td> Brøndby IF</td>
       <td> vs.</td>
       <td> AC Horsens</td>
-      <td class="add"> <button type="button" class"btn btn-default">
+      <td class="add"> <button type="button" class="favourite">
         <i class="glyphicon glyphicon-star-empty"> </i> 
       </button> 
       </td>
@@ -128,6 +141,10 @@
       <td> Silkeborg IF</td>
       <td> vs.</td>
       <td> Hobro </td>
+      <td class="add"> <button type="button" class="favourite">
+        <i class="glyphicon glyphicon-star-empty"> </i> 
+      </button> 
+      </td>
     </tr>
 
     <tr class="firstrow">
@@ -135,6 +152,10 @@
       <td> Silkeborg IF</td>
       <td> vs.</td>
       <td> Hobro </td>
+      <td class="add"> <button type="button" class="favourite">
+        <i class="glyphicon glyphicon-star-empty"> </i> 
+      </button> 
+      </td>
     </tr>
 
 
@@ -144,18 +165,30 @@
       <td> Silkeborg IF</td>
       <td> vs.</td>
       <td> Hobro </td>
+      <td class="add"> <button type="button" class="favourite">
+        <i class="glyphicon glyphicon-star-empty"> </i> 
+      </button> 
+      </td> 
     </tr>
     <tr class="secondrow">
       <td> 20:00 </td>
       <td> Silkeborg IF</td>
       <td> vs.</td>
       <td> Hobro </td>
+      <td class="add"> <button type="button" class="favourite">
+        <i class="glyphicon glyphicon-star-empty"> </i> 
+      </button> 
+      </td>
     </tr>
     <tr class="secondrow">
       <td> 20:00 </td>
       <td> Silkeborg IF</td>
       <td> vs.</td>
       <td> Hobro </td>
+      <td class="add"> <button type="button" class="favourite">
+        <i class="glyphicon glyphicon-star-empty"> </i> 
+      </button> 
+      </td>
     </tr>
   
   </table>
@@ -168,7 +201,7 @@
       <td class="team"> FC København</td>
       <td class="vs"> vs. </td>
       <td class="team"> FC Midtjylland</td>
-      <td class="add"> <button type="button" class"btn btn-default">
+      <td class="add"> <button type="button" class="favourite">
         <i class="glyphicon glyphicon-star-empty"> </i> 
       </button> 
       </td>
@@ -180,7 +213,7 @@
       <td> FC Helsingør</td>
       <td> vs.</td>
       <td> Randers FC </td>
-      <td class="add"> <button type="button" class"btn btn-default">
+      <td class="add"> <button type="button" class="favourite">
         <i class="glyphicon glyphicon-star-empty"> </i> 
       </button> 
       </td>
@@ -191,7 +224,7 @@
       <td> Brøndby IF</td>
       <td> vs.</td>
       <td> AC Horsens</td>
-      <td class="add"> <button type="button" class"btn btn-default">
+      <td class="add"> <button type="button" class="favourite">
         <i class="glyphicon glyphicon-star-empty"> </i> 
       </button> 
       </td>
@@ -210,48 +243,88 @@
 
 <div class="right-section">
 
- <h1>
-                <a id="menu-toggle" href="#" class="btn btn-default"><i class="glyphicon glyphicon-arrow-right"></i></a>
-                </h1>
-
-
-<table>
-  <caption class="liga">My games</caption>
-  
-  <tr class="firstrow">
-      <td class="team"><a href="stats.html"> Chelsea FC </a></td>
-      <td class="vs"><a href="stats.html"> vs. </a></td>
-      <td class="team"><a href="stats.html"> Leicester City </a></td>
-  </tr>
-  
-
-  <tr class="secondrow">
-    <td> Silkeborg IF</td>
-    <td> vs.</td>
-    <td> Tottenham Hotspur </td>
-  </tr>
-
-  <tr class="firstrow">
-    <td> FC Dinamo Bucuresti</td>
-    <td> vs.</td>
-    <td> FC Chelsea</td>
-  </tr>
-
-   <tr class="secondrow">
-    <td> AC Milan</td>
-    <td> vs.</td>
-    <td> Fiorentina </td>
-  </tr>
-
+ <table>
+   <h2 class="league">England - Premier League </h2>
+<tr class="toplane">
+      <td class="position"> P. </td>
+      <td class="hold"> Team</td>
+      <td class="matches"> M. </td>
+      <td class="points"> Pt. </td>
+    </tr>
+      
+     <tr class="firstrow">
+      <td> 1. </td>
+      <td>  Manchester United</td>
+      <td> 1 </td>
+      <td> 3 </td>
+   </tr>
+      
+       <tr class="secondrow">
+      <td> 2. </td>
+      <td>  Liverpool</td>
+      <td> 1</td>
+      <td> 3 </td>
+   </tr>
+ 
+       
+     <tr class="firstrow">
+      <td> 3. </td>
+      <td>  Huddersfield Town</td>
+      <td> 1</td>
+      <td> 3 </td>
+   </tr>
+      
+      <tr class="secondrow">
+      <td> 4. </td>
+      <td> Manchester City </td>
+      <td> 1</td>
+      <td> 3 </td>
+   </tr>
+      
+      <tr class="firstrow">
+      <td> 5. </td>
+      <td>  West Bromwich Albion</td>
+      <td> 1</td>
+      <td> 3 </td>
+   </tr>
+      
+       <tr class="secondrow">
+      <td> 6. </td>
+      <td> Chelsea </td>
+      <td> 1</td>
+      <td> 3 </td>
+   </tr>
+      
+      <tr class="firstrow">
+      <td> 7. </td>
+      <td>  Watford</td>
+      <td> 1</td>
+      <td> 3 </td>
+   </tr>
+</table>
+<!--<table class="TableB" style="border:solid">
+  <thead>
+    <tr>
+      <td id="col1">Column 1</td>
+      <td id="col2">Column 2</td>
+      <td id="col3">Column 3</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data a</td>
+      <td>Data b</td>
+      <td>Data c</td>
+    </tr>
+  </tbody>
 </table>
 
-
- </div>
+ </div> -->
 
 
 
 </div> <!-- Wrapper close -->
-<div id="page-content-wrapper">
+<!--<div id="page-content-wrapper">
     <div class='hidden-lg'>
         <div class="content-header">
              <h1>
@@ -259,7 +332,7 @@
                 </h1>
 
         </div>
-    </div>
+    </div> -->
 
 </body>
 </html>
