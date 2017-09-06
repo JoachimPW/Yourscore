@@ -49,5 +49,8 @@ $(document).ready(function() {
   });
 });
 
-/* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
+  $('.skifte').click( function(){
+    $(this).find('i').toggleClass("glyphicon-star-empty").toggleClass("glyphicon-arrow-left");
+});
+
+
