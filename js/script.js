@@ -49,8 +49,8 @@ $(document).ready(function() {
   });
 });
 
-  $('.skifte').click( function(){
-    $(this).find('i').toggleClass("glyphicon-star-empty").toggleClass("glyphicon-arrow-left");
+$(document).ready(function() {
+  $('.glyphicon').click(function(){
+    $(this).toggleClass('glyphicon glyphicon-star-empty').toggleClass('glyphicon glyphicon-star');
+  });
 });
-
-
