@@ -89,6 +89,7 @@ border: 1px solid black;
     height: 300px;
     display:inline-block;
     float:left;
+    
 }
 
 .right-section{
@@ -138,6 +139,7 @@ th, td {
 .yourgames {
     font-size:20px;
     background-color:black;
+    table-layout:fixed;
     
 }
 
