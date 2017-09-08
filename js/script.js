@@ -46,18 +46,16 @@ $(document).ready(function() {
   $(".favourite").click(function() {
     var html = $(this).closest("tr").clone().find('td:last').remove().end().prop('outerHTML');
     $(".yourgames").append(html); {
-      if (this.yourgames ==""){
-        this.yourgames = "animated lightSpeedIn";
+      if (".yourgames" == "") {
+        $(".yourgames").addClass("animated lightSpeedIn");
       } else {
-        this.yourgames = "";
-        window.setTimeout(function)(){
-          el.yourgames = "animated lightSpeedIn";
-        }, 100);
+        $(".yourgames").removeClass("animated lightSpeedIn");
+      }
         }
       }
     
-      }  
-});
+      }));
+  
 
 
 $(document).ready(function() {
