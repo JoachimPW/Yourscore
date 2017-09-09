@@ -45,16 +45,16 @@ function deleteTableB() {
 $(document).ready(function() {
   $(".favourite").click(function() {
     var html = $(this).closest("tr").clone().find('td:last').remove().end().prop('outerHTML');
-    $(".yourgames").append(html); {
-      if (".yourgames" == "") {
-        $(".yourgames").addClass("animated lightSpeedIn");
-      } else {
-        $(".yourgames").removeClass("animated lightSpeedIn");
-      }
-        }
-      }
+    $(".yourgames").append(html); 
+    $(".yourgames").find("td:last").closest("tr").addClass('animated lightSpeedIn');
     
-      }));
+});
+
+      
+    });
+      
+
+
   
 
 
