@@ -90,6 +90,7 @@ border: 1px solid black;
     height: 100%;
     display:inline-block;
     float:left;
+
 }
 
 .right-section{
@@ -300,10 +301,10 @@ footer p {
 }
 
 .transform {
-  -webkit-transition: all 2s ease;  
-  -moz-transition: all 2s ease;  
-  -o-transition: all 2s ease;  
-  -ms-transition: all 2s ease;  
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -o-transition: all 2s ease;
+  -ms-transition: all 2s ease;
   transition: all 2s ease;
 }
 
