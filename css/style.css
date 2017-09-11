@@ -90,7 +90,11 @@ border: 1px solid black;
     height: 100%;
     display:inline-block;
     float:left;
+<<<<<<< HEAD
     overflow: visible;
+=======
+
+>>>>>>> 5657ee5956839f2e38ad881049ad239668d3989c
 }
 
 .right-section{
@@ -294,11 +298,13 @@ footer p {
     color: white;
     display: inline-block;
 }
+<<<<<<< HEAD
 .transform {
   -webkit-transition: all 2s ease;  
   -moz-transition: all 2s ease;  
   -o-transition: all 2s ease;  
   -ms-transition: all 2s ease;  
+=======
 .box {
   background-color: #218D9B;
   height: 100%;
@@ -310,11 +316,15 @@ footer p {
   -moz-transition: all 2s ease;
   -o-transition: all 2s ease;
   -ms-transition: all 2s ease;
+>>>>>>> 5657ee5956839f2e38ad881049ad239668d3989c
   transition: all 2s ease;
 }
 
 .transform-active {
+<<<<<<< HEAD
   background-color: #2A2A2A;
+=======
   background-color: #45CEE0;
+>>>>>>> 5657ee5956839f2e38ad881049ad239668d3989c
   width: 66%;
 }
