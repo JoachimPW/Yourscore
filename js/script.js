@@ -45,12 +45,30 @@ function deleteTableB() {
 $(document).ready(function() {
   $(".favourite").click(function() {
     var html = $(this).closest("tr").clone().find('td:last').remove().end().prop('outerHTML');
-    $(".yourgames").append(html);
-  });
+    $(".yourgames").append(html); 
+    $(".yourgames").find("td:last").closest("tr").addClass('animated lightSpeedIn');
+    
 });
+
+      
+    });
+      
+
+
+  
+
 
 $(document).ready(function() {
   $('.glyphicon').click(function(){
     $(this).toggleClass('glyphicon glyphicon-star-empty').toggleClass('glyphicon glyphicon-star');
   });
+});
+/*$(document).ready(function() {
+ $('.glyphicon').click(function(){
+   $(".yourgames tr:last").remove();
+   }); 
+   
+ });*/
+$("#button").click(function() {
+  $('.transform').toggleClass('transform-active');
 });
