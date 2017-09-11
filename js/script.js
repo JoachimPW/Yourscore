@@ -16,14 +16,7 @@ window.onclick = function(e) {
 }
 
 
-function hideDiv() {
-    var x = document.getElementsByClassName('mid-section');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
+
 
 
 /*function copytable() {
@@ -32,10 +25,10 @@ function hideDiv() {
   var copy = source.cloneNode(true);
   copy.class = 'urgames';
 
-  /* you can change what you want already here, e.g:
+  /* you can change what you want already here, e.g: 
   [].forEach.call(copy.querySelectorAll('td'), function(item, index) {
     switch (item.textContent.trim()) {
-
+     
     }
   });
 
@@ -47,38 +40,22 @@ function deleteTableB() {
   tableB.parentNode.removeChild(tableB);
 } */
 
-// Button - add to favorite //
-
+// Button - add to favorite with animation //
 $(document).ready(function() {
   $(".favourite").click(function() {
     var html = $(this).closest("tr").clone().find('td:last').remove().end().prop('outerHTML');
-<<<<<<< HEAD
     $(".yourgames").append(html); 
     $(".yourgames").find("td:last").closest("tr").addClass('animated lightSpeedIn');
     
 });
 
-      
     });
       
 
 
   
-=======
-    $(".yourgames").append(html);
-    $(".yourgames").find("td:last").closest("tr").addClass('animated lightSpeedIn');
 
-});
-
-
-    });
-
-
-
-
->>>>>>> 5657ee5956839f2e38ad881049ad239668d3989c
-
-
+// Button function which toggles between the two glyphicons //
 $(document).ready(function() {
   $('.glyphicon').click(function(){
     $(this).toggleClass('glyphicon glyphicon-star-empty').toggleClass('glyphicon glyphicon-star');
@@ -87,18 +64,11 @@ $(document).ready(function() {
 /*$(document).ready(function() {
  $('.glyphicon').click(function(){
    $(".yourgames tr:last").remove();
-<<<<<<< HEAD
    }); 
    
  });*/
+$(document).ready(function() {
 $("#button").click(function() {
-  $('.transform').toggleClass('transform-active');
+  $('.transform').toggleClass('transform-active')
 });
-=======
-   });
-
- });*/
-$("#button").click(function() {
-  $('.transform').toggleClass('transform-active');
 });
->>>>>>> 5657ee5956839f2e38ad881049ad239668d3989c

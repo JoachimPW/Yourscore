@@ -4,8 +4,11 @@ body {
     margin:0;
     font-family: 'Righteous', cursive;
 }
+/* HEADER */
+
 header {
     width:100%;
+    overflow:visible;
 }
 
 ul {
@@ -14,7 +17,7 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: #333;
-    height: 65px;
+    height: 80px;
 }
 
 li {
@@ -39,14 +42,15 @@ li a:hover:not(.active) {
 }
 
 .logo {
-    width:90%;
+    width:70%;
     height: auto;
 }
 
+/* HEADER END */
+
 .banner {
     width:100%;
-    height: 420px;
-    background: url("img/header.jpg") center;
+    height: 200px;
     background-size: cover;
 }
 
@@ -90,11 +94,7 @@ border: 1px solid black;
     height: 100%;
     display:inline-block;
     float:left;
-<<<<<<< HEAD
-    overflow: visible;
-=======
-
->>>>>>> 5657ee5956839f2e38ad881049ad239668d3989c
+    overflow:visible;
 }
 
 .right-section{
@@ -231,7 +231,6 @@ h1 {
 
 .dropdown {
     float: left;
-    overflow: hidden;
 }
 .dropbtn{
   min-width: 120px;
@@ -252,21 +251,17 @@ h1 {
 }
 
 .dropdown-content {
-    display: none;
-    position: absolute;
     background-color: #f9f9f9;
     max-width: 150px;
     min-width: 120px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    z-index: 30;
 }
 
 .dropdown-content a {
-    float: none;
     color: black;
     padding: 12px 16px;
     text-decoration: none;
-    display: block;
     text-align: left;
 }
 
@@ -298,13 +293,6 @@ footer p {
     color: white;
     display: inline-block;
 }
-<<<<<<< HEAD
-.transform {
-  -webkit-transition: all 2s ease;  
-  -moz-transition: all 2s ease;  
-  -o-transition: all 2s ease;  
-  -ms-transition: all 2s ease;  
-=======
 .box {
   background-color: #218D9B;
   height: 100%;
@@ -312,19 +300,15 @@ footer p {
 }
 
 .transform {
-  -webkit-transition: all 2s ease;
-  -moz-transition: all 2s ease;
-  -o-transition: all 2s ease;
-  -ms-transition: all 2s ease;
->>>>>>> 5657ee5956839f2e38ad881049ad239668d3989c
+  -webkit-transition: all 2s ease;  
+  -moz-transition: all 2s ease;  
+  -o-transition: all 2s ease;  
+  -ms-transition: all 2s ease;  
   transition: all 2s ease;
 }
 
 .transform-active {
-<<<<<<< HEAD
-  background-color: #2A2A2A;
-=======
   background-color: #45CEE0;
->>>>>>> 5657ee5956839f2e38ad881049ad239668d3989c
-  width: 66%;
+  height: auto;
+  width: 55%;
 }
