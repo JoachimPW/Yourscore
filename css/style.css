@@ -14,7 +14,6 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: #333;
-    height: 100px;
 }
 
 li {
@@ -23,6 +22,7 @@ li {
 
 li a {
     display: block;
+    font-size: 20px;
     color: white;
     text-align: center;
     padding: 14px 16px;
@@ -34,7 +34,7 @@ li a:hover:not(.active) {
 }
 
 .active {
-    background:grey;
+    background:#d1d1e0;
 }
 
 .logo {
@@ -86,9 +86,10 @@ border: 1px solid black;
 
 .left-section{
     width:33%;
-    height: 300px;
+    height: 100%;
     display:inline-block;
     float:left;
+    overflow: visible;
 }
 
 .right-section{
@@ -138,7 +139,7 @@ th, td {
 .yourgames {
     font-size:20px;
     background-color:black;
-    
+    table-layout:fixed;
 }
 
 
@@ -207,15 +208,6 @@ h1 {
 
 
 /* Dropdown */
-
-footer {
-    background-color:black;
-    left: 0;
-    bottom: 0;
-    height: 60px;
-    width: 100%;
-
-}
 .container {
     overflow: hidden;
     background-color: #333;
@@ -288,3 +280,28 @@ footer {
     border-radius: 5px;
     background: green;
   }
+footer {
+  background: black;
+  text-align: center;
+  padding: 10px 0px;
+}
+
+footer p {
+  padding-top: 1px;
+  padding-bottom: 5px;
+    font-size: 17px;
+    color: white;
+    display: inline-block;
+}
+.transform {
+  -webkit-transition: all 2s ease;  
+  -moz-transition: all 2s ease;  
+  -o-transition: all 2s ease;  
+  -ms-transition: all 2s ease;  
+  transition: all 2s ease;
+}
+
+.transform-active {
+  background-color: #2A2A2A;
+  width: 66%;
+}

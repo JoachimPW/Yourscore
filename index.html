@@ -1,86 +1,82 @@
-<!DOCTYPE html>
-<html>
-<head>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
-<link type="text/css" rel="stylesheet" href="css/style.css" />
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript" src="js/script.js"></script>
-<!--<script type="text/js" rel="javascript" href="js/animate.js"/> -->
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <link type="text/css" rel="stylesheet" href="css/animate.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <!--<script type="text/js" rel="javascript" href="js/animate.js"/> -->
 
 
-<meta charset="utf-8">
-<title>test</title>
-</head>
+    <meta charset="utf-8">
+    <title>test</title>
+    </head>
 
-<body>
-<header>
-  <ul>
-    <li><img class="logo" src="css/img/logo.png"></img> </li>
-    <li><a class="active" href="#home">Home</a></li>
-    <li><a href="#news">News</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <body>
+    <header>
+      <ul>
+        <li><img class="logo" src="css/img/logo.png"> </li>
+        <li><a class="active" href="#home" style="text-decoration:none">Home</a></li>
+        <li><a href="#news" style="text-decoration:none">News</a></li>
+        <li><a href="#contact" style="text-decoration:none">Contact</a></li>
 
 
-    <li style="float:right"><div class="dropdown">
-    <button class="dropbtn" onclick="myFunction()">Friends list</button>
-    <div class="dropdown-content" id="myDropdown">
-      <a href="#"><div id="circle"></div>Friend 1</a>
-      <a href="#"><div id="circle"></div>Friend 2</a>
-      <a href="#">Friend 3</a>
+        <li style="float:right"><div class="dropdown">
+        <button class="dropbtn" onclick="myFunction()">Friends list</button>
+        <div class="dropdown-content" id="myDropdown">
+          <a href="#"><div id="circle"></div>Friend 1</a>
+          <a href="#"><div id="circle"></div>Friend 2</a>
+          <a href="#">Friend 3</a>
+        </div>
+            </div></li>
+          <li class="active" style="float:right"><a href="#login" style="text-decoration:none">Login</a></li>
+      </ul>
+
+    </header>
+
+    <div class="banner">
+      <img class="cover" src="img/header.jpg">
     </div>
-  </div></li>
-  </ul>
 
-</header>
+    <div class="wrapper">
+        <div class="left-section transform">
 
-<div class="banner">
-  <img class="cover" src="img/header.jpg"> </img>
-</div>
-
-<div class="wrapper">
-  <div class="left-section">
-
-    <div class="yourgames">
-      <table>
-
-      </table>
-
- <table>
+            <div class="yourgames">
+                
+<table>
   <h2 class="league">My games</h2>
 
-  <tr class="firstrow">
-      <td class="time"> 18:00 </td>
-      <td class="team"><a href="stats.html"> Chelsea </a></td>
-      <td class="vs"> vs.</td>
-      <td class="team"><a href="stats.html"> Leicester </a></td>
-      <td class="add"> <a id="skift" href="#"> </a> <button class="favourite">
-        <i class="glyphicon glyphicon-star-empty"> </i> 
-      </button> 
-      </td>
-  </tr>
+  
+       
+      
 
 </table>
 
-  </div>
 
-  </div>
-
-<div class="mid-section">
-  <div class="dato">
-    <table>
-      <td> <a href="#"> Aug 29 </td>
-      <td> <a href="#"> Aug 30 </td>
-      <td> <a href="#"> Aug 31 </td>
-      <td> <a href="index.html"> Today </td>
-      <td> <a href="#"> Sep 2 </td>
-      <td> <a href="#"> Sep 3 </td>
-      <td> <a href="#"> Sep 4 </td>
-    </table>
-    </div>
+<input type="button" id="button" value="Click Me" onclick="hideDiv()">
 
 
-   <h2 class="liga">England - Premier League</h2>
+            </div>
+
+      </div>
+
+    <div class="mid-section">
+      <div class="dato">
+        <table>
+            <td> <a href="#"> Aug 29 </a></td>
+            <td> <a href="#"> Aug 30 </a></td>
+            <td> <a href="#"> Aug 31 </a></td>
+            <td> <a href="index.html"> Today </a></td>
+            <td> <a href="#"> Sep 2 </a></td>
+            <td> <a href="#"> Sep 3 </a></td>
+            <td> <a href="#"> Sep 4 </a></td>
+        </table>
+        </div>
+
+<h2 class="liga">England - Premier League</h2>
   <table>
 <tr class="firstrow">
       <td class="time"> 18:00 </td>
@@ -95,10 +91,10 @@
 
 
     <tr class="secondrow">
-      <td> 18:00 </td>
-      <td> Chelsea </td>
-      <td> vs.</td>
-      <td> Liverpool </td>
+      <td class="time"> 18:00 </td>
+      <td class="team"> Chelsea </td>
+      <td class="vs"> vs.</td>
+      <td class="team"> Liverpool </td>
       <td class="add"> <button type="button" class="favourite">
         <i class="glyphicon glyphicon-star-empty"> </i> 
       </button> 
@@ -106,10 +102,10 @@
    </tr>
 
     <tr class="firstrow">
-      <td> 19:30 </td>
-      <td> Manchester City </td>
-      <td> vs.</td>
-      <td> Manchester United </td>
+      <td class="time"> 19:30 </td>
+      <td class="team"> Man United </td>
+      <td class="vs">vs.</td>
+      <td class="team"> Man City </td>
       <td class="add"> <button type="button" class="favourite">
         <i class="glyphicon glyphicon-star-empty"> </i> 
       </button> 
@@ -117,21 +113,21 @@
     </tr>
 
     <tr class="secondrow">
-      <td> 18:00 </td>
-      <td> Newcastle United</td>
-      <td> vs.</td>
-      <td> West Ham United </td>
+      <td class="time">18:00 </td>
+      <td class="team"> Newcastle</td>
+      <td class="vs"> vs.</td>
+      <td class="team"> West Ham </td>
       <td class="add"> <button type="button" class="favourite">
         <i class="glyphicon glyphicon-star-empty"> </i> 
       </button> 
       </td>
     </tr>
 
-       <tr class="firstrow">
-      <td> 19:30 </td>
-      <td> Burnley </td>
-      <td> vs.</td>
-      <td> Arsenal </td>
+    <tr class="firstrow">
+      <td class="time"> 19:30 </td>
+      <td class="team"> Burnley </td>
+      <td class="vs"> vs.</td>
+      <td class="team"> Arsenal </td>
       <td class="add"> <button type="button" class="favourite">
         <i class="glyphicon glyphicon-star-empty"> </i>
         </button>  
@@ -146,9 +142,9 @@
 
     <tr class="firstrow">
       <td class="time"> 18:00 </td>
-      <td class="team"> FC København</td>
+      <td class="team"> FCK</td>
       <td class="vs"> vs. </td>
-      <td class="team"> FC Midtjylland</td>
+      <td class="team"> FCM</td>
       <td class="add"> <button type="button" class="favourite">
         <i class="glyphicon glyphicon-star-empty"> </i> 
       </button> 
@@ -157,10 +153,10 @@
 
     <tr class="secondrow">
 
-      <td> 18:00 </td>
-      <td> FC Helsingør</td>
-      <td> vs.</td>
-      <td> Randers FC </td>
+      <td class="time"> 18:00 </td>
+      <td class="team"> FC Helsingør</td>
+      <td class="vs">vs.</td>
+      <td class="team"> Randers FC </td>
       <td class="add"> <button type="button" class="favourite">
         <i class="glyphicon glyphicon-star-empty"> </i> 
       </button> 
@@ -168,10 +164,10 @@
    </tr>
 
     <tr class="firstrow">
-      <td> 19:30 </td>
-      <td> Brøndby IF</td>
-      <td> vs.</td>
-      <td> AC Horsens</td>
+      <td class="time"> 19:30 </td>
+      <td class="team"> Brøndby IF</td>
+      <td class="vs"> vs.</td>
+      <td class="team"> AC Horsens</td>
 
       <td class="add"> <button type="button" class="favourite">
         <i class="glyphicon glyphicon-star-empty"> </i> 
@@ -180,56 +176,10 @@
     </tr>
 
     <tr class="secondrow">
-      <td> 20:00 </td>
-      <td> Silkeborg IF</td>
-      <td> vs.</td>
-      <td> Hobro </td>
-      <td class="add"> <button type="button" class="favourite">
-        <i class="glyphicon glyphicon-star-empty"> </i> 
-      </button> 
-      </td>
-    </tr>
-
-    <tr class="firstrow">
-      <td> 20:00 </td>
-      <td> Silkeborg IF</td>
-      <td> vs.</td>
-      <td> Hobro </td>
-      <td class="add"> <button type="button" class="favourite">
-        <i class="glyphicon glyphicon-star-empty"> </i> 
-      </button> 
-      </td>
-    </tr>
-
-
-
-    <tr class="secondrow">
-      <td> 20:00 </td>
-      <td> Silkeborg IF</td>
-      <td> vs.</td>
-      <td> Hobro </td>
-      <td class="add"> <button type="button" class="favourite">
-        <i class="glyphicon glyphicon-star-empty"> </i> 
-      </button> 
-      </td> 
-    </tr>
-
-    <tr class="secondrow">
-      <td> 20:00 </td>
-      <td> Silkeborg IF</td>
-      <td> vs.</td>
-      <td> Hobro </td>
-      <td class="add"> <button type="button" class="favourite">
-        <i class="glyphicon glyphicon-star-empty"> </i> 
-      </button> 
-      </td>
-    </tr>
-
-    <tr class="secondrow">
-      <td> 20:00 </td>
-      <td> Silkeborg IF</td>
-      <td> vs.</td>
-      <td> Hobro </td>
+      <td class="time"> 20:00 </td>
+      <td class="team"> Silkeborg IF</td>
+      <td class="vs"> vs.</td>
+      <td class="team"> Hobro </td>
       <td class="add"> <button type="button" class="favourite">
         <i class="glyphicon glyphicon-star-empty"> </i> 
       </button> 
@@ -241,10 +191,10 @@
 <h2 class="liga">Bulgaria - Purva Liga</h2>
      <table>
          <tr class="firstrow">
-      <td class="time"> 18:00 </td>
-      <td class="team"> CSKA Sofia</td>
-      <td class="vs"> vs. </td>
-      <td class="team"> FC Midtjylland</td>
+          <td class="time"> 18:00 </td>
+          <td class="team"> CSKA Sofia</td>
+          <td class="vs"> vs. </td>
+          <td class="team"> FC Midtjylland</td>
 
       <td class="add"> <button type="button" class="favourite">
         <i class="glyphicon glyphicon-star-empty"> </i> 
@@ -254,10 +204,10 @@
 
 
     <tr class="secondrow">
-      <td> 18:00 </td>
-      <td> Ludogorets Razgrad</td>
-      <td> vs.</td>
-      <td> Randers FC </td>
+      <td class="time"> 18:00 </td>
+      <td class="team"> Ludogorets Razgrad</td>
+      <td class="vs"> vs.</td>
+      <td class="team"> Randers FC </td>
 
       <td class="add"> <button type="button" class="favourite">
         <i class="glyphicon glyphicon-star-empty"> </i> 
@@ -266,10 +216,10 @@
    </tr>
 
     <tr class="firstrow">
-      <td> 19:30 </td>
-      <td> Lokomotiv Plovdiv</td>
-      <td> vs.</td>
-      <td> AC Horsens</td>
+      <td class="time"> 19:30 </td>
+      <td class="team"> Lokomotiv Plovdiv</td>
+      <td class="vs"> vs.</td>
+      <td class="team"> AC Horsens</td>
       <td class="add"> <button class="favourite">
         <i class="glyphicon glyphicon-star-empty"> </i> 
       </button> 
@@ -277,20 +227,20 @@
     </tr>
 
     <tr class="secondrow">
-      <td> 18:00 </td>
-      <td> Vereya</td>
-      <td> vs.</td>
-      <td> Cherno more </td>
+      <td class="time"> 18:00 </td>
+      <td class="team"> Vereya</td>
+      <td class="vs"> vs.</td>
+      <td class="team"> Cherno more </td>
       <td class="add"> <button type="button" class="favourite">
         <i class="glyphicon glyphicon-star-empty"> </i> 
       </button> 
       </td>
    </tr>
      <tr class="firstrow">
-      <td> 19:30 </td>
-      <td> FC Voluntari</td>
-      <td> vs.</td>
-      <td> Hermannstadt</td>
+      <td class="time"> 19:30 </td>
+      <td class="team"> FC Voluntari</td>
+      <td class="vs"> vs.</td>
+      <td class="team"> Hermannstadt</td>
        <td class="add"> <button type="button" class="favourite">
         <i class="glyphicon glyphicon-star-empty"> </i> 
       </button> 
@@ -298,10 +248,10 @@
     </tr>
 
     <tr class="secondrow">
-      <td> 18:00 </td>
-      <td> Botosani</td>
-      <td> vs.</td>
-      <td> ACS Poli Timisoara </td>
+      <td class="time"> 18:00 </td>
+      <td class="team"> Botosani</td>
+      <td class="vs"> vs.</td>
+      <td class="team"> ACS Poli Timisoara </td>
        <td class="add"> <button type="button" class="favourite">
         <i class="glyphicon glyphicon-star-empty"> </i> 
       </button> 
@@ -311,171 +261,184 @@
 
 
     </table>
-
-
-
-  </table>
-
-  </div> <!-- MID-SECTION close -->
-
-<div class="right-section">
-
-  <div class="dato">
-    <table>
-      <td> <a href="#"> Aug 29 </td>
-      <td> <a href="#"> Aug 30 </td>
-      <td> <a href="#"> Aug 31 </td>
-      <td> <a href="index.html"> Today </td>
-      <td> <a href="#"> Sep 2 </td>
-      <td> <a href="#"> Sep 3 </td>
-      <td> <a href="#"> Sep 4 </td>
-    </table>
-    </div>
- <table>
-   <h2 class="league">England - Premier League </h2>
-<tr class="toplane">
-      <td class="position"> P. </td>
-      <td class="hold"> Team</td>
-      <td class="matches"> M. </td>
-      <td class="points"> Pt. </td>
-    </tr>
-      
-     <tr class="firstrow">
-      <td> 1. </td>
-      <td>  Manchester United</td>
-      <td> 1 </td>
-      <td> 3 </td>
-   </tr>
-      
-       <tr class="secondrow">
-      <td> 2. </td>
-      <td>  Liverpool</td>
-      <td> 1</td>
-      <td> 3 </td>
-   </tr>
- 
-       
-     <tr class="firstrow">
-      <td> 3. </td>
-      <td>  Huddersfield Town</td>
-      <td> 1</td>
-      <td> 3 </td>
-   </tr>
-      
-      <tr class="secondrow">
-      <td> 4. </td>
-      <td> Manchester City </td>
-      <td> 1</td>
-      <td> 3 </td>
-   </tr>
-      
-      <tr class="firstrow">
-      <td> 5. </td>
-      <td>  West Bromwich Albion</td>
-      <td> 1</td>
-      <td> 3 </td>
-   </tr>
-      
-       <tr class="secondrow">
-      <td> 6. </td>
-      <td> Chelsea </td>
-      <td> 1</td>
-      <td> 3 </td>
-   </tr>
-      
-      <tr class="firstrow">
-      <td> 7. </td>
-      <td>  Watford</td>
-      <td> 1</td>
-      <td> 3 </td>
-   </tr>
-</table>
-
-
-</div> <!-- right-section close -->
-
-
-
-</div> <!-- Wrapper close -->
-
-
-<!--<table class="TableB" style="border:solid">
-  <thead>
-    <tr>
-      <td id="col1">Column 1</td>
-      <td id="col2">Column 2</td>
-      <td id="col3">Column 3</td>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Data a</td>
-      <td>Data b</td>
-      <td>Data c</td>
-    </tr>
-  </tbody>
-
- <h1>
-                <a id="menu-toggle" href="#" class="btn btn-default"><i class="glyphicon glyphicon-arrow-right"></i></a>
-                </h1>
-
-
-<table>
-  <caption class="liga">My games</caption>
-
-  <tr class="firstrow">
-      <td class="team"><a href="stats.html"> Chelsea FC </a></td>
-      <td class="vs"><a href="stats.html"> vs. </a></td>
-      <td class="team"><a href="stats.html"> Leicester City </a></td>
-  </tr>
-
-
-  <tr class="secondrow">
-    <td> Silkeborg IF</td>
-    <td> vs.</td>
-    <td> Tottenham Hotspur </td>
-  </tr>
-
-  <tr class="firstrow">
-    <td> FC Dinamo Bucuresti</td>
-    <td> vs.</td>
-    <td> FC Chelsea</td>
-  </tr>
-
-   <tr class="secondrow">
-    <td> AC Milan</td>
-    <td> vs.</td>
-    <td> Fiorentina </td>
-  </tr>
-
-
-</table>
-
- </div>
-
-</div>
-
-   
-
-  </div>
-
-<!--<div id="page-content-wrapper">
-    <div class='hidden-lg'>
-        <div class="content-header">
-             <h1>
-                <a id="menu-toggle" href="#" class="btn btn-default"><i class="glyphicon glyphicon-arrow-right"></i></a>
-                </h1>
-
-        </div>
-    </div> -->
-
-    <!-- Footer -->
-
-<!--Footer starts here-->
     
 
 
-    <!--- Footer closes here -->
 
-</body>
-</html>
+      
+
+      </div> <!-- MID-SECTION close -->
+
+    <div class="right-section">
+
+          <div class="dato">
+            <table>
+                <td> <a href="#"> Aug 29 </a></td>
+                <td> <a href="#"> Aug 30 </a></td>
+                <td> <a href="#"> Aug 31 </a></td>
+                <td> <a href="index.html"> Today </a></td>
+                <td> <a href="#"> Sep 2 </a></td>
+                <td> <a href="#"> Sep 3 </a></td>
+                <td> <a href="#"> Sep 4 </a></td>
+            </table>
+            </div>
+         <table>
+       <h2 class="league">England - Premier League </h2>
+    <tr class="toplane">
+          <td class="position"> P. </td>
+          <td class="hold"> Team</td>
+          <td class="matches"> M. </td>
+          <td class="points"> Pt. </td>
+        </tr>
+
+         <tr class="firstrow">
+          <td style="background:#4d4dff"> 1. </td>
+          <td>  Manchester United</td>
+          <td> 1 </td>
+          <td> 3 </td>
+       </tr>
+
+           <tr class="secondrow">
+          <td style="background:#4d4dff"> 2. </td>
+          <td>  Liverpool</td>
+          <td> 1</td>
+          <td> 3 </td>
+       </tr>
+
+
+         <tr class="firstrow">
+         <td style="background:#4d4dff"> 3. </td>
+          <td>  Huddersfield Town</td>
+          <td> 1</td>
+          <td> 3 </td>
+       </tr>
+
+          <tr class="secondrow">
+          <td style="background:#4d4dff"> 4. </td>
+          <td> Manchester City </td>
+          <td> 1</td>
+          <td> 3 </td>
+       </tr>
+
+          <tr class="firstrow">
+          <td style="background:#999900"> 5. </td>
+          <td>  West Bromwich Albion</td>
+          <td> 1</td>
+          <td> 3 </td>
+       </tr>
+
+           <tr class="secondrow">
+          <td> 6. </td>
+          <td> Chelsea </td>
+          <td> 1</td>
+          <td> 3 </td>
+       </tr>
+
+          <tr class="firstrow">
+          <td> 7. </td>
+          <td>  Watford</td>
+          <td> 1</td>
+          <td> 3 </td>
+       </tr>
+
+            <tr class="secondrow">
+          <td> 8. </td>
+          <td> Southampton </td>
+          <td> 1</td>
+          <td> 3 </td>
+       </tr>
+
+          <tr class="firstrow">
+          <td> 9. </td>
+          <td>  Tottenham Hotspur</td>
+          <td> 1</td>
+          <td> 3 </td>
+       </tr>
+
+             <tr class="secondrow">
+          <td> 10. </td>
+          <td> Burnley </td>
+          <td> 1</td>
+          <td> 3 </td>
+       </tr>
+
+          <tr class="firstrow">
+          <td> 11. </td>
+          <td>  Stoke City </td>
+          <td> 1</td>
+          <td> 3 </td>
+       </tr>
+
+             <tr class="secondrow">
+          <td> 12. </td>
+          <td> Everton </td>
+          <td> 1</td>
+          <td> 3 </td>
+       </tr>
+
+          <tr class="firstrow">
+          <td> 13. </td>
+          <td>  Swansea City</td>
+          <td> 1</td>
+          <td> 3 </td>
+       </tr>
+
+             <tr class="secondrow">
+          <td> 14. </td>
+          <td> Newcastle United </td>
+          <td> 1</td>
+          <td> 3 </td>
+       </tr>
+
+          <tr class="firstrow">
+          <td> 15. </td>
+          <td>  Leicester City</td>
+          <td> 1</td>
+          <td> 3 </td>
+       </tr>
+
+             <tr class="secondrow">
+          <td> 16. </td>
+          <td> Arsenal </td>
+          <td> 1</td>
+          <td> 3 </td>
+       </tr>
+
+          <tr class="firstrow">
+          <td> 17. </td>
+          <td>  Brighton</td>
+          <td> 1</td>
+          <td> 3 </td>
+       </tr>
+             <tr class="secondrow">
+          <td style="background:#cc0000"> 18. </td>
+          <td> Bournemouth </td>
+          <td> 1</td>
+          <td> 3 </td>
+       </tr>
+
+          <tr class="firstrow">
+          <td style="background:#cc0000"> 19. </td>
+          <td>  Crystal Palace</td>
+          <td> 1</td>
+          <td> 3 </td>
+       </tr>
+
+             <tr class="secondrow">
+          <td style="background:#cc0000"> 20. </td>
+          <td> West Ham United </td>
+          <td> 1</td>
+          <td> 3 </td>
+       </tr>
+
+        </table>
+
+
+    </div> <!-- right-section close -->
+    </div> <!-- Wrapper close -->
+    
+    <footer>
+        <p class="white-color">Web apps exam BAAA Copyright &copy; 2017 | Developed by: Joachim, Denis, Georgi </p>
+    </footer>
+    </body>
+    </html>
