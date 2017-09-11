@@ -32,10 +32,10 @@ function hideDiv() {
   var copy = source.cloneNode(true);
   copy.class = 'urgames';
 
-  /* you can change what you want already here, e.g: 
+  /* you can change what you want already here, e.g:
   [].forEach.call(copy.querySelectorAll('td'), function(item, index) {
     switch (item.textContent.trim()) {
-     
+
     }
   });
 
@@ -52,6 +52,7 @@ function deleteTableB() {
 $(document).ready(function() {
   $(".favourite").click(function() {
     var html = $(this).closest("tr").clone().find('td:last').remove().end().prop('outerHTML');
+<<<<<<< HEAD
     $(".yourgames").append(html); 
     $(".yourgames").find("td:last").closest("tr").addClass('animated lightSpeedIn');
     
@@ -63,6 +64,19 @@ $(document).ready(function() {
 
 
   
+=======
+    $(".yourgames").append(html);
+    $(".yourgames").find("td:last").closest("tr").addClass('animated lightSpeedIn');
+
+});
+
+
+    });
+
+
+
+
+>>>>>>> 5657ee5956839f2e38ad881049ad239668d3989c
 
 
 $(document).ready(function() {
@@ -73,9 +87,18 @@ $(document).ready(function() {
 /*$(document).ready(function() {
  $('.glyphicon').click(function(){
    $(".yourgames tr:last").remove();
+<<<<<<< HEAD
    }); 
    
  });*/
 $("#button").click(function() {
   $('.transform').toggleClass('transform-active');
 });
+=======
+   });
+
+ });*/
+$("#button").click(function() {
+  $('.transform').toggleClass('transform-active');
+});
+>>>>>>> 5657ee5956839f2e38ad881049ad239668d3989c
